@@ -1,0 +1,305 @@
+html,
+input {
+  font-family: 'Microsoft Yahei'; }
+
+body {
+  background: #fcffc5; }
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.search-tickets {
+  margin: 40px auto;
+  width: 944px;
+  text-align: center; }
+  .search-tickets .select-box:before, .search-tickets .select-box:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .search-tickets .select-box .place,
+  .search-tickets .select-box .date {
+    width: 380px;
+    text-align: center; }
+  .search-tickets .select-box .place,
+  .search-tickets .select-box .date,
+  .search-tickets .select-box .other-tickets-wrap {
+    float: left; }
+  .search-tickets .select-box .from,
+  .search-tickets .select-box .to,
+  .search-tickets .select-box .set-out-date,
+  .search-tickets .select-box .return-date {
+    width: 169px; }
+  .search-tickets .select-box .from,
+  .search-tickets .select-box .set-out-date {
+    float: left; }
+  .search-tickets .select-box .to,
+  .search-tickets .select-box .return-date {
+    float: right; }
+  .search-tickets .select-box .title {
+    font-size: 25px;
+    color: #316745;
+    line-height: 0; }
+    .search-tickets .select-box .title i {
+      font-size: 12px; }
+  .search-tickets .select-box input[type="text"] {
+    width: 160px;
+    height: 55px;
+    font-size: 40px;
+    text-align: center;
+    color: #a83a00;
+    border: 0;
+    box-shadow: inset 3px 3px 10px 5px rgba(0, 0, 0, 0.15);
+    background: #fdffd7; }
+  .search-tickets .select-box .place {
+    margin-right: 60px;
+    position: relative; }
+    .search-tickets .select-box .place .transform {
+      content: '';
+      display: block;
+      width: 42px;
+      height: 32px;
+      position: absolute;
+      left: 168px;
+      bottom: 13px;
+      background: url(../images/transform.png) center center no-repeat;
+      cursor: pointer; }
+    .search-tickets .select-box .place .city-picker {
+      position: absolute;
+      border: 1px solid #316745;
+      background: #fff;
+      width: 490px;
+      padding: 10px;
+      top: 87px;
+      z-index: 10;
+      display: none; }
+      .search-tickets .select-box .place .city-picker.open {
+        display: block; }
+      .search-tickets .select-box .place .city-picker .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer; }
+      .search-tickets .select-box .place .city-picker .option-title {
+        border-bottom: 1px solid #316745;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 450px; }
+        .search-tickets .select-box .place .city-picker .option-title li {
+          float: left;
+          font-size: 14px;
+          width: 16%;
+          text-align: center;
+          cursor: pointer; }
+          .search-tickets .select-box .place .city-picker .option-title li:hover {
+            color: #a83a00; }
+      .search-tickets .select-box .place .city-picker .option-content li {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+        float: left;
+        width: 65px;
+        text-align: center;
+        cursor: pointer; }
+        .search-tickets .select-box .place .city-picker .option-content li:hover {
+          color: #a83a00; }
+  .search-tickets .select-box .date input {
+    font-size: 16px; }
+  .search-tickets .select-box .date .return-date,
+  .search-tickets .select-box .date .set-out-date {
+    position: relative; }
+  .search-tickets .select-box .date .return-date.disabled .title {
+    color: #96b385; }
+  .search-tickets .select-box .date .set-out-date .date-btn {
+    display: block;
+    position: absolute;
+    bottom: 22px;
+    width: 0;
+    height: 0;
+    cursor: pointer; }
+    .search-tickets .select-box .date .set-out-date .date-btn.next {
+      right: -6px;
+      border-top: 5px solid transparent;
+      border-left: 6px solid #316745;
+      border-bottom: 5px solid transparent; }
+    .search-tickets .select-box .date .set-out-date .date-btn.prev {
+      left: -6px;
+      border-top: 5px solid transparent;
+      border-right: 6px solid #316745;
+      border-bottom: 5px solid transparent; }
+  .search-tickets .select-box .other-tickets-wrap {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #316745;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2; }
+    .search-tickets .select-box .other-tickets-wrap input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border: 1px solid #316745;
+      vertical-align: -6px;
+      box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.1); }
+  .search-tickets .tickets-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%; }
+    .search-tickets .tickets-info:before, .search-tickets .tickets-info:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .search-tickets .tickets-info li {
+      position: relative;
+      float: left;
+      width: 25%;
+      font-size: 20px;
+      text-align: center;
+      color: #316745; }
+      .search-tickets .tickets-info li:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 48%;
+        bottom: -15px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 7px solid #316745; }
+  .search-tickets .search-btn {
+    width: 420px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Microsoft Yahei';
+    border: 0;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(275deg, #ff9f24, #fe781e);
+    cursor: pointer; }
+    .search-tickets .search-btn:hover {
+      color: #316745; }
+  .search-tickets .tickets-list {
+    margin-top: 20px;
+    width: 100%; }
+    .search-tickets .tickets-list #loading {
+      display: none; }
+    .search-tickets .tickets-list th {
+      padding: 10px 0;
+      background: #306644;
+      color: #fff;
+      font-size: 14px;
+      position: relative;
+      vertical-align: middle; }
+      .search-tickets .tickets-list th span {
+        display: block; }
+      .search-tickets .tickets-list th:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 1px;
+        border-right: 1px solid #fff;
+        height: 28px; }
+      .search-tickets .tickets-list th.last-child:after {
+        display: none; }
+    .search-tickets .tickets-list tr td {
+      position: relative;
+      background: #efe1b0;
+      vertical-align: middle;
+      padding: 5px 0;
+      font-size: 14px; }
+      .search-tickets .tickets-list tr td i.start,
+      .search-tickets .tickets-list tr td i.end {
+        display: inline-block;
+        font-size: 10px;
+        color: #fff;
+        border-radius: 3px;
+        padding: 3px;
+        -webkit-transform-origin-x: 0;
+        -webkit-transform: scale(0.8); }
+      .search-tickets .tickets-list tr td i.start {
+        background: #ce963f; }
+      .search-tickets .tickets-list tr td i.end {
+        background: #3f6800; }
+      .search-tickets .tickets-list tr td:after {
+        content: '';
+        display: block;
+        width: 1px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        bottom: 10px;
+        background: #ccc; }
+      .search-tickets .tickets-list tr td:last-child:after {
+        display: none; }
+    .search-tickets .tickets-list .reserve-btn {
+      padding: 4px 8px;
+      color: #fff;
+      border-radius: 3px;
+      background-image: -webkit-linear-gradient(-90deg, #0960eb, #1d1dbb);
+      cursor: pointer; }
+
+.calendar-wrap {
+  padding: 10px 25px;
+  background: #fff;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  border: 1px solid #316745;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  display: none; }
+
+  .calendar-wrap.open {
+        display: block; }
+  .calendar-wrap i {
+    top: 130px;
+    position: absolute;
+    cursor: pointer;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; }
+  .calendar-wrap i.next {
+    right: 6px;
+    border-left: 9px solid #316745; }
+  .calendar-wrap i.prev {
+    left: 6px;
+    border-right: 9px solid #316745; }
+  .calendar-wrap .calendar-box .date-title {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #316745; }
+  .calendar-wrap .calendar-box .calendar {
+    float: left; }
+    .calendar-wrap .calendar-box .calendar:last-child {
+      float: right; }
+   .calendar-wrap  .calendar-box:after{
+      display: table;
+      content: '';
+      clear: both;
+  }
+  .calendar-wrap table {
+    text-align: center; }
+    .calendar-wrap table th,
+    .calendar-wrap table td {
+      margin: 5px;
+      padding: 5px; }
+    .calendar-wrap table th {
+      padding-bottom: 10px; }
+    .calendar-wrap table td span {
+      display: block;
+      background: #f4f4f4;
+      padding: 5px;
+      border-radius: 3px;
+      color: #333;
+      cursor: pointer; }
+      .calendar-wrap table td span.active, .calendar-wrap table td span:hover {
+        background-color: #a83a00;
+        color: #fff; }
+    .calendar-wrap table td .price {
+      color: #a83a00; }
