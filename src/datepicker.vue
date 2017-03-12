@@ -26,11 +26,7 @@
 <script>
 module.exports = {
   name: 'datepicker',
-<<<<<<< HEAD
   props: ['isActive', 'year', 'month'],
-=======
-  props: ['isActive'],
->>>>>>> origin/master
   methods: {
     selectDate: function (item) {
       var selectDateString = this.selectedYear + '-' + this.selectedMonth + '-' + item;
@@ -61,7 +57,6 @@ module.exports = {
     }
   },
   data: function () {
-<<<<<<< HEAD
     // var date = new Date();
     // var month = date.getMonth() + 1;
     // var year = date.getFullYear();
@@ -71,23 +66,6 @@ module.exports = {
       weekList: ['日', '一', '二', '三', '四', '五', '六']
     };
   },
-  // created: function () {
-  //   var numArr = this.selected.split('-');
-  //   var date = new Date(numArr[0], numArr[1] - 1, numArr[2]);
-  //   this.selectedMonth = date.getMonth() + 1;
-  //   this.selectedYear = date.getFullYear();
-  // },
-=======
-    var date = new Date();
-    var month = date.getMonth() + 1;
-    var year = date.getFullYear();
-    return {
-      selectedMonth: month,
-      selectedYear: year,
-      weekList: ['日', '一', '二', '三', '四', '五', '六']
-    };
-  },
->>>>>>> origin/master
   computed: {
     YearMonthTitle: function () {
       return this.selectedYear + '年' + this.selectedMonth + '月';

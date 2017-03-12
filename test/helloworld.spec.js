@@ -7,7 +7,7 @@ describe('这是一个suite',
       function () {
         var ChildHelloWorld = vue.extend(HelloWorld);
         var helloworld = new ChildHelloWorld();
-        expect(helloworld.message).toBe('hello world');
+        expect(helloworld.message).toBe('hello world!');
       });
   });
 

@@ -24,6 +24,11 @@
             </div>
         </div>
     </div>
+
+    <div id="model-test">
+        <input v-bind:value="something" v-on:input="something = $event.target.value">
+        {{something}}
+    </div>
     <script src="/dist/build.js"></script>
 </body>
 

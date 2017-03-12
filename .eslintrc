@@ -1,12 +1,9 @@
 {
 	"extends":"standard",
 	 "globals": {
-<<<<<<< HEAD
         "describe": true,
         "expect": true,
         "it":true
-=======
->>>>>>> origin/master
     },
     "plugins": [
     "html"
